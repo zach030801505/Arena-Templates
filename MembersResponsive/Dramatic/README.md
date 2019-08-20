@@ -6,5 +6,6 @@
     <li>Move the .css files to <i>/CSS/Luminate/</i></li>
     <li>Move Immages from the Resource folder to <i>/Content/HtmlImages/Public/Images/General/WebSite/</i></li>
     <li>Add a new template in Arena and point it to the .ascx file you just coppied in step 1</li>
+    <li>apply the template somewhere</li>
 
 </ol>
