@@ -1,0 +1,58 @@
+/* Classes*/
+body{
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar { width: 0 !important }
+
+.header{
+    height: 100vh;
+    background-color: black;
+    background-image: url("/Content/HtmlImages/Public/Images/General/WebSite/homeSplashImg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ID's*/
+#all-content{
+}
+#title{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    text-align: center;
+    font-size: 10vw;
+    text-shadow: 4pt 4pt 2pt #000
+}
+#downScroll{
+    position: absolute;
+    left: 40%;
+    bottom: 5%;
+    width: 20%;
+    text-align: center;
+
+    animation-name: bounce;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+/* Animations */
+@keyframes bounce {
+    0% {bottom: 5%;}
+    50% {bottom: 10%;}
+    100% {bottom: 5%;}
+}
+@-webkit-keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(100px);}
+    100% {transform: translateY(0);}
+}
