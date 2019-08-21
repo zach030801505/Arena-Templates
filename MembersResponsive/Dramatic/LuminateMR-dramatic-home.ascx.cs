@@ -32,7 +32,7 @@ namespace ArenaWeb.Templates.Custom.Luminate
         public PlaceHolder Header { get { return HeaderCell; } }
         public PlaceHolder Nav { get { return NavCell; } }
         public PlaceHolder Main { get { return MainCell; } }
-        public PlaceHolder Right { get { return RightCell; } }
+        //public PlaceHolder Right { get { return RightCell; } }
         public PlaceHolder MainBottom { get { return MainBottomCell; } }
         //public PlaceHolder BottomLeft { get { return BottomLeftCell; } }
         //public PlaceHolder BottomMiddle { get { return BottomMiddleCell; } }
@@ -80,12 +80,13 @@ namespace ArenaWeb.Templates.Custom.Luminate
             if (DynamicSizingSetting)
                 SetBottomColumnSizes();
 
+            /*
             if (RightCell.Controls.Count == 0)
             {
                 pnRight.Visible = false;
                 pnMain.Attributes.Add("class", "col-sm-12");
             }
-
+            */
             base.Render(writer);
         }
 

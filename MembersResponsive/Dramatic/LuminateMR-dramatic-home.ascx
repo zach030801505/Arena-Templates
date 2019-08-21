@@ -75,11 +75,3 @@
         });
     });
 </script>
-
-
-
-<div class="hidden" runat="server" visible="false">
-    <div id="pnRight" runat="server">
-        <asp:PlaceHolder ID="RightCell" runat="server" />
-    </div>
-</div>
