@@ -58,7 +58,7 @@ namespace ArenaWeb.Templates.Custom.Luminate
 			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/bootstrap-hover-dropdown.min.js");
 			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/jquery.matchHeight-min.js");
 			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/template.js");
-            BasePage.AddJavascriptInclude(this.Page, "https://code.jquery.com/jquery-3.3.1.slim.min.js");
+            BasePage.AddJavascriptInclude(this.Page, "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js");
             BasePage.AddJavascriptInclude(this.Page, "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js");
             BasePage.AddJavascriptInclude(this.Page, "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js");
 		}

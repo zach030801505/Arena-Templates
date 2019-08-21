@@ -20,16 +20,18 @@
     </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <a class="navbar-brand hidden-sm hidden-md hidden-lg">
-                <asp:Label ID="lblNavTitle" runat="server" /></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="top-nav">
-                <asp:PlaceHolder ID="NavCell" runat="server" />
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand hidden-sm hidden-md hidden-lg">
+            <asp:Label ID="lblNavTitle" runat="server" />
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="top-nav">
+            <asp:PlaceHolder ID="NavCell" runat="server" />
+        </div>
+    </nav>
+
     <div class="container-fluid">
     <div class="row" id="content">
         <div class="col-12">
