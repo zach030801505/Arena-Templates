@@ -9,36 +9,31 @@
     <div class="row header">
         <h1 id="title"><asp:Label ID="orgName" runat="server" /></h1>
         <asp:PlaceHolder ID="HeaderCell" runat="server" />
-        <div class="row justift-content-center">
-            <div class="col-4">
+        <div class="row mx-auto">
+            <div class="col-4" id="downScroll">
                 <a href="#content">
-                    <img id="downScroll" src="/Content/HtmlImages/Public/Images/General/WebSite/DownArrow.svg" alt="">
+                    <img  src="/Content/HtmlImages/Public/Images/General/WebSite/DownArrow.svg" alt="">
                 </a>
             </div>
         </div>
 
     </div>
-    <div class="row">
-        <nav class="navbar navbar-default sticky-top siteNav">
-            <div class="navbar-header">
-                <a class="navbar-brand hidden-sm hidden-md hidden-lg">
-                    <asp:Label ID="lblNavTitle" runat="server" /></a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="top-nav">
-                    <asp:PlaceHolder ID="NavCell" runat="server" />
-                </div>
-            </nav>
     </div>
-    <div id="row">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand hidden-sm hidden-md hidden-lg">
+                <asp:Label ID="lblNavTitle" runat="server" /></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="top-nav">
+                <asp:PlaceHolder ID="NavCell" runat="server" />
+            </div>
+        </nav>
+    <div class="container-fluid">
+    <div class="row" id="content">
         <div class="col-12">
             <div class="main-top" id="pnMain" runat="server">
-                <asp:Label ID="lblPageTitle" runat="server" CssClass="hidden-xs" />
                 <asp:PlaceHolder ID="MainCell" runat="server" />
             </div>
         </div>

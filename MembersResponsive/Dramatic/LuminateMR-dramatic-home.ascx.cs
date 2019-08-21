@@ -22,9 +22,6 @@ namespace ArenaWeb.Templates.Custom.Luminate
         [BooleanSetting("Show Bread Crumbs", "Optional Flag indicating if the Bread Crumb Trail should be displayed on this page.", false, true)]
         public string ShowBreadCrumbsSetting { get { return CurrentPortalPage.Setting("ShowBreadCrumbs", "false", false); } }
 
-        [BooleanSetting("Bottom Area Dynamic Sizing", "Determines if Bottom Three columns (Left, Middle, Right) can dynamically resize due to where modules are added. Example, module in BottomLeft only would cause that Column to fill entire area", false, true)]
-        public bool DynamicSizingSetting { get { return Convert.ToBoolean(CurrentPortalPage.Setting("DynamicSizing", "true", false)); } }
-
         #endregion
 
         #region Content Areas
@@ -52,22 +49,26 @@ namespace ArenaWeb.Templates.Custom.Luminate
             AddMetaTag("viewport", "width=device-width, initial-scale=1");
             orgName.Text = CurrentOrganization.Name;
 
-			BasePage.AddCssLink(this.Page, CurrentPortal.BootstrapCSSInclude);
-			BasePage.AddCssLink(this.Page, "css/bootstrap-social.css");
 
-			BasePage.AddJavascriptInclude(this.Page, CurrentPortal.BootstrapJSInclude);
-			BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/bootstrap-hover-dropdown.min.js");
-			BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/jquery.matchHeight-min.js");
-			BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/template.js");
+			//BasePage.AddCssLink(this.Page, CurrentPortal.BootstrapCSSInclude);
+            BasePage.AddCssLink(this.Page, "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+            //BasePage.AddCssLink(this.Page, "css/bootstrap-social.css");
 
+			//BasePage.AddJavascriptInclude(this.Page, CurrentPortal.BootstrapJSInclude);
+			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/bootstrap-hover-dropdown.min.js");
+			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/jquery.matchHeight-min.js");
+			//BasePage.AddJavascriptInclude(this.Page, "Include/MembersResponsive/template.js");
+            BasePage.AddJavascriptInclude(this.Page, "https://code.jquery.com/jquery-3.3.1.slim.min.js");
+            BasePage.AddJavascriptInclude(this.Page, "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js");
+            BasePage.AddJavascriptInclude(this.Page, "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js");
 		}
 
         protected override void Render(HtmlTextWriter writer)
         {
 
-            lblPageTitle.Text = this.Title;
+            //lblPageTitle.Text = this.Title;
             lblNavTitle.Text = this.Title;
-            lblPageTitle.Visible = (ShowHeadingSetting.ToLower() != "false");
+            //lblPageTitle.Visible = (ShowHeadingSetting.ToLower() != "false");
 
             //phBreadCrumbs.Visible = (ShowBreadCrumbsSetting.ToLower() != "false");
 
@@ -76,11 +77,11 @@ namespace ArenaWeb.Templates.Custom.Luminate
             {
                 pnBottom.Visible = false;
             }
-            */
+
             if (DynamicSizingSetting)
                 SetBottomColumnSizes();
 
-            /*
+
             if (RightCell.Controls.Count == 0)
             {
                 pnRight.Visible = false;
