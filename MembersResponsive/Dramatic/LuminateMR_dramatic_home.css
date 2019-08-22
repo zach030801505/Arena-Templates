@@ -1,4 +1,3 @@
-/* Classes*/
 body{
     background-color: rgb(233,233,233);
     color: black;
@@ -12,6 +11,17 @@ body{
 }
 body::-webkit-scrollbar { width: 0 !important }
 
+nav{
+    color: #FFF;
+}
+
+/* Classes*/
+.main-top{
+    margin-bottom: 0px;
+}
+.main-bot{
+    margin-top: 0px;
+}
 .header{
     height: 100vh;
     background-color: black;
@@ -26,6 +36,18 @@ body::-webkit-scrollbar { width: 0 !important }
     padding-right: 0;
 }
 
+/** Text classes **/
+.text-bold{
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.text-sub{
+    font-family: europa, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 
 /* ID's*/
 #all-content{

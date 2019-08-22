@@ -7,11 +7,18 @@
 			<xsl:value-of select='normalize-space(@cssclass)'/>
 		  </xsl:attribute>
         <xsl:for-each select="group">
-          <li class="nav-item">
+          <li>
+              <xsl:attribute name="class">
+                nav-item
+                <xsl:if test="@currentpageid = @pageid">
+                      active
+                </xsl:if>
+              </xsl:attribute>
             <a class="nav-link">
               <xsl:attribute name="href">
                 default.aspx?page=<xsl:value-of select="@pageid"/>
               </xsl:attribute>
+
               <xsl:value-of select="@name"/>
             </a>
           </li>
