@@ -7,6 +7,9 @@
 
 <div class="container-fluid" id="all-content">
     <div class="row header">
+        <video src="/Content/HtmlImages/Public/Images/General/WebSite/WebHomeVideo.mp4" autoplay muted loop id="homeVideo" poster="/Content/HtmlImages/Public/Images/General/WebSite/homeSplashImg.jpg">
+
+        </video>
         <h1 id="title"><asp:Label ID="orgName" runat="server" /></h1>
         <asp:PlaceHolder ID="HeaderCell" runat="server" />
         <div class="row mx-auto">
