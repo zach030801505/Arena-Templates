@@ -33,11 +33,10 @@ nav{
     padding: 0;
 }
 #homeVideo{
-    
     right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    top: 0;
+    min-height: 100vh;
+
 }
 .col-12{
     padding-left: 0;
@@ -100,4 +99,9 @@ nav{
     0% {transform: translateY(0);}
     50% {transform: translateY(100px);}
     100% {transform: translateY(0);}
+}
+@media screen and (max-width: 579px) {
+    #homeVideo{
+        display: none;
+    }
 }

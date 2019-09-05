@@ -27,7 +27,7 @@
         <a class="navbar-brand hidden-sm hidden-md hidden-lg">
             <asp:Label ID="lblNavTitle" runat="server" />
         </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation" width="100%" height="100%">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="top-nav">
@@ -73,5 +73,8 @@
                 });
             }
         });
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            $("#homeVideo").css('display', 'none')
+        }
     });
 </script>
