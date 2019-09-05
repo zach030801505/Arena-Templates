@@ -55,6 +55,9 @@ nav{
     font-weight: 300;
     font-style: normal;
 }
+.text-center{
+    text-align: center;
+}
 
 /* ID's*/
 #all-content{
