@@ -74,7 +74,6 @@ namespace ArenaWeb.Templates.Custom.Luminate
         {
 
             lblPageTitle.Text = this.Title;
-            lblNavTitle.Text = this.Title;
             lblPageTitle.Visible = (ShowHeadingSetting.ToLower() != "false");
 
             //phBreadCrumbs.Visible = (ShowBreadCrumbsSetting.ToLower() != "false");
