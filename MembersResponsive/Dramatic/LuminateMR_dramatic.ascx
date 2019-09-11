@@ -1,4 +1,5 @@
-<%@ control language="c#" inherits="ArenaWeb.Templates.MembersResponsive, Arena" %>
+<%@ control language="c#" inherits="ArenaWeb.Templates.Custom.Luminate.MembersResponsive" CodeFile="LuminateMR-dramatic.ascx.cs" %>
+
 
 <meta charset="utf-8">
 <meta name="theme-color" content="#2D2D2D">
@@ -9,6 +10,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <a class="navbar-brand hidden-sm hidden-md hidden-lg">
+        <asp:Label ID="orgName" runat="server" />
         <asp:Label ID="lblNavTitle" runat="server" />
     </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation" width="100%" height="100%">
@@ -21,9 +23,15 @@
 
 <div class="container-fluid">
     <div class="row header">
+        <h1></h1>
         <asp:PlaceHolder ID="HeaderCell" runat="server" />
     </div>
 </div>
+
+
+
+
+
 
 <div class="main-top">
     <div class="container">

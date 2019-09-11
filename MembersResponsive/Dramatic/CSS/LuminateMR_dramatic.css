@@ -23,21 +23,9 @@ nav{
     margin-top: 0px;
 }
 .header{
-    height: 100vh;
-    background-color: black;
-    background-image: url("/Content/HtmlImages/Public/Images/General/WebSite/homeSplashImg.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0;
-}
-#homeVideo{
-    right: 0;
-    top: 0;
-    min-height: 100vh;
 
 }
+
 .col-12{
     padding-left: 0;
     padding-right: 0;
