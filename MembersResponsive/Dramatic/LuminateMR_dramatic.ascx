@@ -31,7 +31,7 @@
 </div>
 
 <div class="main-top">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9" id="pnMain" runat="server">
                 <div class="content">
@@ -54,7 +54,7 @@
 </div>
 
 <div class="main-bot" id="pnBottom" runat="server">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4" id="pnBottomLeft" runat="server">
                 <div class="col">
@@ -76,7 +76,7 @@
 </div>
 
 <div class="footer">
-    <div class="container">
+    <div class="container-fluid">
         <asp:PlaceHolder ID="FooterCell" runat="server" />
     </div>
 </div>
