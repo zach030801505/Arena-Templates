@@ -14,17 +14,11 @@ namespace ArenaWeb.Templates.Custom.Luminate
         #region Template Settings
 
         // Template Settings
-        [NumericSetting("Help Topic URL", "The Help Topic URL for this page if one exists.", false)]
-        public string HelpTopicURLSetting { get { return CurrentPortalPage.Setting("HelpTopicURL", "", false); } }
-
         [ImageSetting("Page Icon", "Optional Image URL to use as the Icon for the page.  Default is '~/images/#.jpg' where # is the current Page ID.", false)]
         public string HeadingIconSetting { get { return CurrentPortalPage.Setting("HeadingIcon", "", false); } }
 
-        [BooleanSetting("Show Heading", "Optional Flag indicating if the Page Heading should be displayed on this page.", false, true)]
-        public string ShowHeadingSetting { get { return CurrentPortalPage.Setting("ShowHeading", "true", false); } }
-
-        [BooleanSetting("Show Bread Crumbs", "Optional Flag indicating if the Bread Crumb Trail should be displayed on this page.", false, true)]
-        public string ShowBreadCrumbsSetting { get { return CurrentPortalPage.Setting("ShowBreadCrumbs", "false", false); } }
+        [ImageSetting("Header Img", "The webpage head img, if blank it will be black", false)]
+        public string HeadImgSetting { get { return CurrentPortalPage.Setting("HeadImg", "", false); } }
 
         [BooleanSetting("Bottom Area Dynamic Sizing", "Determines if Bottom Three columns (Left, Middle, Right) can dynamically resize due to where modules are added. Example, module in BottomLeft only would cause that Column to fill entire area", false, true)]
         public bool DynamicSizingSetting { get { return Convert.ToBoolean(CurrentPortalPage.Setting("DynamicSizing", "true", false)); } }
@@ -74,7 +68,7 @@ namespace ArenaWeb.Templates.Custom.Luminate
         {
 
             lblPageTitle.Text = this.Title;
-            lblPageTitle.Visible = (ShowHeadingSetting.ToLower() != "false");
+            lblPageTitle.Visible = true;
 
             //phBreadCrumbs.Visible = (ShowBreadCrumbsSetting.ToLower() != "false");
 

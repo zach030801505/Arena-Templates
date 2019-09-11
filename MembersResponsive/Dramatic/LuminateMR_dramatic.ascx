@@ -19,7 +19,12 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="row header">
+    <div class="row header" style="
+        background-image: url('<%= HeadImgSetting %>');
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+    ">
         <h1 id="title"><asp:Label ID="lblPageTitle" runat="server" /></h1>
         <asp:PlaceHolder ID="HeaderCell" runat="server" />
     </div>
