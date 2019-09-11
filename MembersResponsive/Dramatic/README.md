@@ -9,3 +9,35 @@
     <li>apply the template somewhere</li>
 
 </ol>
+
+<h1>Page List</h1>
+<ul>
+    <li>Home Page | static | 3497</li>
+    <li>About | static
+        <ul>
+            <li>our beliefs | static</li>
+            <li>our pastor | static</li>
+            <li>luminate likds | static</li>
+            <li>luminate youth | static</li>
+            <li>calendar | dynamic?</li>
+            <li>campuses | static?</li>
+            <li>language locations | static?</li>
+    </ul></li>
+    <li>Give | static</li>
+    <li>Next Steps | static
+        <ul>
+            <li>Thrive Classes | static</li>
+            <li>Baptism | static</li>
+            <li>Serve | static</li>
+        </ul>
+    </li>
+    <li>media
+        <ul>
+            <li>Watch Live | static | links to youtube</li>
+            <li>Baptism Photos | static | instagram # module?</li>
+            <li>Dedication Photos | static | instagram # module?</li>
+            <li>Event Photos | static | instagram # module?</li>
+            <li>Right Now Media | static</li>
+        </ul>
+    </li>
+</ul>
