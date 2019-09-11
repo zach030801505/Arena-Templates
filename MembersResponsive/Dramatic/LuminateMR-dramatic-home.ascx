@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://use.typekit.net/wev7tsc.css">
 <link rel="stylesheet" href="CSS\Luminate\NewMembersResponsive\LuminateMR_dramatic_home.css">
 
-<div class="container-fluid" id="all-content">
+<div class="container-fluid">
     <div class="row header">
         <video src="/Content/HtmlImages/Public/Images/General/WebSite/WebHomeVideo.mp4" autoplay muted loop id="homeVideo" poster="/Content/HtmlImages/Public/Images/General/WebSite/homeSplashImg.jpg">
 
@@ -21,7 +21,7 @@
         </div>
 
     </div>
-    </div>
+</div>
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <a class="navbar-brand hidden-sm hidden-md hidden-lg">

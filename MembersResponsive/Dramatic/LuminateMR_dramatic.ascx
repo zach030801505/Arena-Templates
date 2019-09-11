@@ -1,46 +1,29 @@
 <%@ control language="c#" inherits="ArenaWeb.Templates.MembersResponsive, Arena" %>
+
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#2D2D2D">
+
+<link rel="stylesheet" href="https://use.typekit.net/wev7tsc.css">
+<link rel="stylesheet" href="CSS\Luminate\NewMembersResponsive\LuminateMR_dramatic.css">
 
 
-<!--[if lt IE 9]>
-	<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.min.js"></script>
-	<script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand hidden-sm hidden-md hidden-lg">
+        <asp:Label ID="lblNavTitle" runat="server" />
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation" width="100%" height="100%">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="top-nav">
+        <asp:PlaceHolder ID="NavCell" runat="server" />
+    </div>
+</nav>
 
-<link href="//fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="CSS\Luminate\MembersResponsive\MembersResponsive.css">
-
-<div class="header">
-    <div class="container-fluid">
-         <h1>
-            <asp:Label ID="orgName" runat="server" /></h1>
-            <asp:PlaceHolder ID="HeaderCell" runat="server" />
-            <nav class="navbar navbar-default siteNav">
-                <div class="container">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand hidden-sm hidden-md hidden-lg">
-                                <asp:Label ID="lblNavTitle" runat="server" /></a>
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="top-nav">
-                             <asp:PlaceHolder ID="NavCell" runat="server" />
-                        </div>
-                    </div>
-                </div>
-            </nav>
-
+<div class="container-fluid">
+    <div class="row header">
+        <asp:PlaceHolder ID="HeaderCell" runat="server" />
     </div>
 </div>
-
-
 
 <div class="main-top">
     <div class="container">
