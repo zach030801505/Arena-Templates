@@ -30,7 +30,10 @@ nav{
     padding-left: 0;
     padding-right: 0;
 }
-
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
 /** Text classes **/
 .text-bold{
     font-family: europa, sans-serif;
