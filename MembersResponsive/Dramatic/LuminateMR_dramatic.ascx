@@ -18,22 +18,24 @@
     </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="row header" style="
-        background-image: url('<%= HeadImgSetting %>');
-        background-color: black;
-        background-size: cover;
-        background-repeat: no-repeat;
-    ">
-        <h1 id="title"><asp:Label ID="lblPageTitle" runat="server" /></h1>
-        <asp:PlaceHolder ID="HeaderCell" runat="server" />
+<div class="container-fluid mr-0 ml-0">
+    <div class="row mr-0">
+        <div class="col header" style="
+            background-image: url('<%= HeadImgSetting %>');
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+        ">
+            <h1 id="title"><asp:Label ID="lblPageTitle" runat="server" /></h1>
+            <asp:PlaceHolder ID="HeaderCell" runat="server" />
+        </div>
     </div>
 </div>
 
 <div class="main-top">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-9" id="pnMain" runat="server">
+    <div class="container-fluid mr-0 ml-0">
+        <div class="row mr-0">
+            <div class="col-sm-9" style="padding-right:0;" id="pnMain" runat="server">
                 <div class="content">
                     <asp:PlaceHolder ID="MainCell" runat="server" />
                 </div>
@@ -45,7 +47,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mr-0">
             <div class="col-xs-12 text-center">
                 <asp:PlaceHolder ID="MainBottomCell" runat="server" />
             </div>
@@ -54,8 +56,8 @@
 </div>
 
 <div class="main-bot" id="pnBottom" runat="server">
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid mr-0 ml-0">
+        <div class="row mr-0">
             <div class="col-sm-4" id="pnBottomLeft" runat="server">
                 <div class="col">
                     <asp:PlaceHolder ID="BottomLeftCell" runat="server" />
@@ -76,7 +78,11 @@
 </div>
 
 <div class="footer">
-    <div class="container-fluid">
-        <asp:PlaceHolder ID="FooterCell" runat="server" />
+    <div class="container-fluid mr-0 ml-0">
+        <div class="row mr-0">
+            <div class="col-12">
+                <asp:PlaceHolder ID="FooterCell" runat="server" />
+            </div>
+        </div>
     </div>
 </div>
