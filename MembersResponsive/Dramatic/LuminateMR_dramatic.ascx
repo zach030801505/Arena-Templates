@@ -25,6 +25,7 @@
             background-color: black;
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
         ">
             <h1 id="title"><asp:Label ID="lblPageTitle" runat="server" /></h1>
             <asp:PlaceHolder ID="HeaderCell" runat="server" />
